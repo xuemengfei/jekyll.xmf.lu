@@ -37,8 +37,8 @@ compile:
 # ---------------------- #
 
 deploy:
-  repository:
-  branch:
+  repository: git@github.com:xuemengfei/notes.xmf.lu.git
+  branch: master
 
 
 # ---------------------- #
