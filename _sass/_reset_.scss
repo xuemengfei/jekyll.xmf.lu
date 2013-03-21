@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  font: 14px/1.5 'Helvetica Neue', arial, sans-serif;
+  @include text-size-adjust;
+}
+
+button, input, select, textarea {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 6px;
+}
+
+h1, h2, h3, h4, h5, h6,
+input, select, textarea {
+  font-size: 100%;
+}
+
+a {
+  color: #21759B;
+  text-decoration: none;
+  &:hover {
+    color: #0F3647;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+address, em {
+  font-style: normal;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+code {
+  font-family: Monaco, Consolas, 'Lucida Console', monospace;
+}
+
+// Consistent with img tag
+audio, canvas, video {
+  display: inline-block;
+  @include ie7-inline-block;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+}
+
+// ie8-
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}

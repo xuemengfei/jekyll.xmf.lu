@@ -1,0 +1,44 @@
+---
+layout: default
+title: Home Page
+---
+{% for post in paginator.posts %}
+  <article class="entry" id="{{ page.id }}">
+    <header class="entry-header">
+      <h2 class="entry-title">
+        <a href="{{ post.url }}">{{ page.title }}</a>
+      </h1>
+      <time>{{ page.date | date: '%Y/%m/%d %A' }}</time>
+    </header>
+
+    <section class="entry-content">
+      {% assign content = post.content | split: '<!-- more -->' %}
+      {% assign size = content | size %}
+
+      {{ content | first }}
+
+      {% if size > 1 %}<p><a href="{{ post.url }}">继续阅读 &rarr;</a></p>{% endif %}
+    </section>
+
+    <footer class="entry-footer">
+      Post on&nbsp;
+      <time>{{ post.date | date: '%Y/%m/%d %A' }}</time>
+      &nbsp;|&nbsp;Category:&nbsp;
+      <a href='#'>Internet</a>
+    </footer>
+  </article>
+{% endfor %}
+
+<nav class="post-nav">
+  {% if paginator.previous_page %}
+    <div class="nav-prev float-l">
+      <a href='{% if paginator.previous_page == 1 %}{{ page1_path }}{% else %}{{ site.paginate_path | replace: ':num', paginator.previous_page }}{% endif %}'>← Previous Page</a>
+    </div>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <div class="nav-prev float-r">
+      <a href='{{ site.paginate_path | replace: ':num', paginator.next_page }}'>Next Page →</a>
+    </div>
+  {% endif %}
+</nav>

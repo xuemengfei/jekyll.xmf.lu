@@ -1,0 +1,53 @@
+# ---------------------- #
+#      Site Configs      #
+# ---------------------- #
+
+title: Xue's Notes
+url: http://notes.xmf.lu
+permalink: /:title.html
+paginate: 10
+paginate_path: /page/:num
+
+
+# ---------------------- #
+#         Jekyll         #
+# ---------------------- #
+
+safe: true
+markdown: redcarpet
+exclude: ['Gemfile', 'Gemfile.lock']
+# destination: _site
+# server_port: 4000
+
+
+# ---------------------- #
+#      Compile Sass      #
+# ---------------------- #
+
+# run `compass help compile` in terminal to find more available options
+compile:
+  no_line_comments: true
+  sass_dir: _sass
+  # css_dir: stylesheets
+  # output_style: expanded
+
+
+# ---------------------- #
+#       Deployment       #
+# ---------------------- #
+
+deploy:
+  repository:
+  branch:
+
+
+# ---------------------- #
+#    Social Networks     #
+# ---------------------- #
+
+# weibo:
+#   username:
+#   uid:
+#   appkey:
+
+# disqus:

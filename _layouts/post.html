@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="entry" id="{{ page.id }}">
+  <header class="entry-header">
+    <h1 class="entry-title">{{ page.title }}</h1>
+  </header>
+
+  <section class="entry-content">
+    {{ content }}
+  </section>
+
+  <footer class="entry-footer">
+    Post on&nbsp;
+    <time>{{ page.date | date: '%Y/%m/%d %A' }}</time>
+    &nbsp;|&nbsp;Category:&nbsp;
+    <a href='#'>Internet</a>
+  </footer>
+
+  <footer>
+    {% if page.previous %}<a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>{% endif %}
+    {% if page.next %}<a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>{% endif %}
+  </footer>
+</article>
