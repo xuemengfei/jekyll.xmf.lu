@@ -4,7 +4,7 @@
 
 title: Xue's Notes
 url: http://notes.xmf.lu
-permalink: /:title.html
+permalink: /categories/:categories/:title.html
 paginate: 10
 paginate_path: /page/:num
 
@@ -29,7 +29,7 @@ compile:
   no_line_comments: true
   sass_dir: _sass
   # css_dir: stylesheets
-  # output_style: expanded
+  output_style: compressed
 
 
 # ---------------------- #
