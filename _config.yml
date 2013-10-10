@@ -13,7 +13,7 @@ paginate_path: /page/:num
 #         Jekyll         #
 # ---------------------- #
 
-safe: true
+safe: false
 markdown: redcarpet
 exclude: ['Gemfile', 'Gemfile.lock']
 # destination: _site
