@@ -16,7 +16,7 @@ paginate_path: /page/:num
 safe: false
 markdown: redcarpet
 exclude: ['Gemfile', 'Gemfile.lock']
-timezone: China/Beijing
+timezone: UCT
 
 
 # ---------------------- #
