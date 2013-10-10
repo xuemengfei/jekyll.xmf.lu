@@ -4,7 +4,7 @@
 
 title: Xue's Notes
 url: http://notes.xmf.lu
-permalink: /categories/:categories/:title.html
+permalink: /:categories/:title.html
 paginate: 10
 paginate_path: /page/:num
 
@@ -16,8 +16,7 @@ paginate_path: /page/:num
 safe: false
 markdown: redcarpet
 exclude: ['Gemfile', 'Gemfile.lock']
-# destination: _site
-# server_port: 4000
+timezone: China/Beijing
 
 
 # ---------------------- #
@@ -25,10 +24,16 @@ exclude: ['Gemfile', 'Gemfile.lock']
 # ---------------------- #
 
 # run `compass help compile` in terminal to find more available options
-compile:
-  no_line_comments: true
+# compile:
+#   no_line_comments: true
+#   sass_dir: _sass
+#   # css_dir: stylesheets
+#   output_style: compressed
+
+sass:
   sass_dir: _sass
-  # css_dir: stylesheets
+  # fonts_dir: fonts
+  debug_info: true
   output_style: compressed
 
 
@@ -40,6 +45,20 @@ deploy:
   repository: git@github.com:xuemengfei/notes.xmf.lu.git
   branch: master
 
+
+# ---------------------- #
+#       Deployment       #
+# ---------------------- #
+
+navigation:
+- text: Home
+  url: /index.html
+- text: Uncategorized
+  url: /uncategorized/
+- text: Test
+  url: /test/
+- text: about
+  url: /about.html
 
 # ---------------------- #
 #    Social Networks     #

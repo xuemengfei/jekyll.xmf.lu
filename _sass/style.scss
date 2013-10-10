@@ -33,7 +33,7 @@ body {
   font-size: 1em;
 
   @media screen and (max-width: 960px) {
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF;
     font-size: 1.14285714em;
   }
 }
@@ -129,7 +129,7 @@ body {
     margin: 0 0 1.714285714em;
   }
   .entry-content {
-    
+
   }
   .entry-footer {
     margin: 1.714285714em 0 0;
@@ -153,22 +153,10 @@ body {
   }
 }
 
-.post-nav {
+.pagination {
   width: 100%;
   line-height: 2;
   overflow: hidden;
-
-  div {
-    width: 50%;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  .nav-next {
-    text-align: right;
-  }
 }
 
 .site-footer {
