@@ -57,7 +57,7 @@ navigation:
   url: /uncategorized/
 - text: Test
   url: /test/
-- text: about
+- text: About
   url: /about.html
 
 # ---------------------- #
