@@ -32,6 +32,7 @@ timezone: UCT
 
 sass:
   sass_dir: _sass
+  css_dir: assets/css
   # fonts_dir: fonts
   debug_info: true
   output_style: compressed
