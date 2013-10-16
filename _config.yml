@@ -53,7 +53,7 @@ deploy:
 
 navigation:
 - text: Home
-  url: /index.html
+  url: /
 - text: Uncategorized
   url: /uncategorized/
 - text: Test

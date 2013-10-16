@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="entry" id="{{ page.id }}">
   <header class="entry-header">
     <h2 class="entry-title">{{ page.title }}</h1>
@@ -14,7 +15,7 @@ layout: default
     Post on&nbsp;
     <time>{{ page.date | date: '%Y/%m/%d %A' }}</time>
     &nbsp;|&nbsp;Category:&nbsp;
-    <a href='#'>Internet</a>
+    <a href="/{{ page.category }}">{{ page.category }}</a>
   </footer>
 
   <nav class="entry-nav">
