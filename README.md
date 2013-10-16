@@ -1,4 +1,4 @@
-notes.xmf.lu
-============
+jekyll.xmf.lu
+=============
 
-A Blog built by jekyll
+A blog build by jekyll
