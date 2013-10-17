@@ -7,7 +7,7 @@
 }
 
 html {
-  font: 14px/1.5 'Helvetica Neue', arial, sans-serif;
+  font: 16px/1.5 'Helvetica Neue', arial, sans-serif;
   @include text-size-adjust;
 }
 
@@ -26,6 +26,8 @@ input, select, textarea {
 a {
   color: #21759B;
   text-decoration: none;
+  transition: color ease 0.3s;
+
   &:hover {
     color: #0F3647;
   }
