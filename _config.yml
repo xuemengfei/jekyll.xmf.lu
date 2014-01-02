@@ -5,7 +5,7 @@
 title: Xue's Blog by Jekyll
 url: http://jekyll.xmf.lu
 permalink: /:categories/:title.html
-paginate: 10
+paginate: 1
 paginate_path: /page/:num
 
 
