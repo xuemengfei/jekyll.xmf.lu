@@ -1,4 +1,5 @@
-source 'http://ruby.taobao.org'
-gem 'jekyll'
-gem 'redcarpet'
+source 'https://rubygems.org'
+gem 'yajl-ruby'
+gem 'jekyll', '2.5.3'
+gem 'redcarpet', '3.5.0'
 gem 'compass'
