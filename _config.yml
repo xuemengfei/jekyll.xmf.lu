@@ -2,7 +2,7 @@
 #      Site Configs      #
 # ---------------------- #
 
-title: Xue's Blog by Jekyll
+title: Blog by Jekyll
 url: http://jekyll.xmf.lu
 permalink: /:categories/:title.html
 paginate: 10
@@ -20,34 +20,6 @@ timezone: UCT
 
 
 # ---------------------- #
-#      Compile Sass      #
-# ---------------------- #
-
-# run `compass help compile` in terminal to find more available options
-# compile:
-#   no_line_comments: true
-#   sass_dir: _sass
-#   # css_dir: stylesheets
-#   output_style: compressed
-
-sass:
-  sass_dir: _sass
-  css_dir: assets/css
-  # fonts_dir: fonts
-  debug_info: true
-  output_style: compressed
-
-
-# ---------------------- #
-#       Deployment       #
-# ---------------------- #
-
-deploy:
-  repository: git@github.com:xuemengfei/notes.xmf.lu.git
-  branch: master
-
-
-# ---------------------- #
 #       Deployment       #
 # ---------------------- #
 
@@ -60,14 +32,3 @@ navigation:
   url: /test/
 - text: About
   url: /about.html
-
-# ---------------------- #
-#    Social Networks     #
-# ---------------------- #
-
-# weibo:
-#   username:
-#   uid:
-#   appkey:
-
-# disqus:

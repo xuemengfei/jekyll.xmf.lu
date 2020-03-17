@@ -15,37 +15,37 @@
       <header class="site-header">
         <hgroup>
           <h1 class="site-title">{{ site.title }}</h1>
-          <h2 class="site-description"> There is no "Y" in happiness. There is "I".</h2>
+          <p class="site-description">There is no "Y" in happiness. There is "I"</p>
         </hgroup>
-
-        <nav class="site-nav">
-          <ul>
-            {% for link in site.navigation %}
-              {% assign current = nil %}
-              {% assign page_url = page.url | remove: 'index.html' %}
-              {% assign link_url = link.url | remove: 'index.html' %}
-              {% assign page_cat = page.category | downcase %}
-              {% assign link_cat = link.text | downcase %}
-
-              {% if page_url == link_url or page_cat == link_cat %}
-                {% assign current = 'current' %}
-              {% endif %}
-
-              <li>
-                <a class="{{ current }}" href="{{ link.url }}">{{ link.text | capitalize }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </nav>
       </header>
+
+      <nav class="site-nav">
+        <ul>
+          {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% assign page_url = page.url | remove: 'index.html' %}
+            {% assign link_url = link.url | remove: 'index.html' %}
+            {% assign page_cat = page.category | downcase %}
+            {% assign link_cat = link.text | downcase %}
+
+            {% if page_url == link_url or page_cat == link_cat %}
+              {% assign current = 'current' %}
+            {% endif %}
+
+            <li>
+              <a class="{{ current }}" href="{{ link.url }}">{{ link.text | capitalize }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
 
       <section class="site-content">
         {{ content }}
       </section>
 
       <footer class="site-footer">
-        Copyright &copy; 2014
-        <a href='http://www.xuemengfei.com' target='_blank'>Mengfei.Xue</a>
+        Copyright &copy; 2020
+        <a href='https://www.xuemengfei.com' target='_blank'>Mengfei.Xue</a>
       </footer>
     </div>
 
